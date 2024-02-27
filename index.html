@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Vue basics</title>
+  <link rel="stylesheet" href="./style.css" />
+</head>
+<body>
+  <section id="Vueapp">
+    <!-- Bind data properties to HTML -->
+    <h2> {{ name }} </h2>
+    <p>{{ calculateAge() }} in 5 years</p>
+    <p>Favorite Number: {{ calculateRandom() }}</p>
+    <div>
+        <img v-bind:src="imageUrl" />
+    </div>
+    <input type="text" v-bind:value="name" />
+  </section>
+
+  <script src="https://unpkg.com/vue@3"></script>
+  <!-- Include your app.js file -->
+  <script src="app.js" type="module"></script>
+  <!-- Mount Vue app -->
+  <script>
+    import app from './app.js';
+ 
+  </script>
+</body>
+</html>
