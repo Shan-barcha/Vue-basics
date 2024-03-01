@@ -6,7 +6,10 @@ const app = createApp({
         return {
           name: 'Maximilian',
           age: 31,
-          imageUrl: 'https://upload.wikimedia.org/wikipedia/commons/thumb/4/4c/Man_Daeng_Waterfall.jpg/640px-Man_Daeng_Waterfall.jpg'
+          imageUrl: 'https://upload.wikimedia.org/wikipedia/commons/thumb/4/4c/Man_Daeng_Waterfall.jpg/640px-Man_Daeng_Waterfall.jpg',
+          Add:"ADD",
+          Reduce:"Reduce",
+          count:"0"
         };
       },
       methods: {
